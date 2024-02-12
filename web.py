@@ -10,9 +10,9 @@ def add_todo():
 
 
 
-st.title("My Todo App")
-st.subheader("This is my todo app")
-st.write("drew is a bitch")
+st.title("This app makes a List:")
+st.subheader("You like lists")
+st.write("Terry loves yogurt")
 
 for todo in todos:
     st.checkbox(todo)
@@ -20,5 +20,5 @@ for todo in todos:
 st.text_input("Enter a todo:", placeholder="Add new todo...",
               on_change=add_todo, key='new_todo')
 
-st.session_state
+#st.session_state
 
