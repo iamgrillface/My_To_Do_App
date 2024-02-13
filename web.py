@@ -7,8 +7,8 @@ def add_todo():
     todo = st.session_state["new_todo"] + "\n"
     todos.append(todo)
     functions.write_todos(todos)
-
-
+    #clears the add_new_todo input box after hitting enter
+    st.session_state['new_todo'] = ""
 
 st.title("Whats Love...")
 st.subheader("got TODO with it")
